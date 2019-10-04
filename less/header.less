@@ -1,0 +1,129 @@
+
+
+.navTop {
+    width: 100%;
+    
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #7a9fe6;
+
+
+        @media @phone {
+            .column();
+        }//close the media query
+
+        a {
+            font-size:  2rem;
+            width: 20%;
+            padding: 1.8%;
+            text-decoration: none;
+            text-align: center;
+            color: #f33b47;
+
+            @media @phone {
+                width: 100%;
+                .borderTop();
+                .color();
+                font-size: @mobileSize;
+            }//close the media query
+        
+            &:hover{
+                color:whitesmoke;
+
+                @media @phone {
+                    color:#18275d;
+                }//closes the media query
+
+            }//closes the hover
+
+        }//closes the a tag
+        
+    }//closes the nav
+
+}//closes the navTop
+
+.bigBox {
+    width: 100%;
+    border: 1px solid #f33b47;
+
+
+        h1 {
+            height:5vh;
+            margin:2%;
+            text-align: center;
+        }//closes the h1
+
+    
+    
+
+    .topBox {
+        width: 100%;
+        background: #556ca6;
+        .color();
+        padding: 2%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        // text-align: center;
+
+        h1 {
+        // text-align: center;
+        }
+
+        .aboutL {
+            width: 30%;
+            font-size:2rem;
+            .lineHeight();
+
+            @media @tablet {
+                  width:45%;  
+            }
+
+            img {
+                width: 100%;
+                border-radius: 5%;
+                padding: 2%;
+                border: 1px solid whitesmoke;
+
+                
+            }//closes the image
+
+        }//closes the About class
+
+        .aboutR {
+            width:60%;
+            .column();
+
+            .inside {
+                width:100%;
+                // .spacing(space-evenly);
+                .column();
+                margin:3%;
+
+                .skills {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    background: #7a9fe6;
+                    margin: 1%;
+            
+                    h2 {
+                        color:whitesmoke;
+                        padding: 2%;
+                    }
+            
+                    .skillItems {
+                        width: 100%;
+                        padding: 2%;
+                        // text-align: center;
+                        color: black;
+                        .lineHeight();
+                    }//closes the skillItem class
+                }//closes the skills class
+            }//closes the inside class
+        }//closes the aboutR
+    }//closes the topBox 
+}//closes the bigBox

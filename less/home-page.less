@@ -1,0 +1,113 @@
+.home {
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    
+
+    .education {
+        width:80%;
+        
+        h2 {
+            padding:5%;
+        }
+        
+        
+        .school {
+            .column();
+            .spacing(space-evenly);
+            
+
+            .study {
+                // .lineHeight();
+            }//closes the study
+
+        }//closes the school class
+
+        
+    }
+        
+
+
+
+
+    .work {
+    display: flex;
+    width: 90%;
+    margin: 1%;
+
+        h2 {
+            padding: 2%;
+        }
+    
+        
+
+        .job {
+            width: 50%;
+            padding: 2%;
+            .lineHeight();
+        }//closes the job class
+
+    }//closes the work section
+
+    .professional {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .proItem {
+            width: 100%;
+            padding: 2%;
+            .lineHeight();
+        }//closes the proItem
+
+    }//closes the professional class
+
+    @media(max-width: 768px){
+        width: 100%;
+        padding-top: 2%;
+    }//close the media query
+
+    @media(max-width: 500px){
+        width: 100%;
+        padding-top: 2%;
+    }//close the media query
+
+    
+
+    .hobbies {
+            display:flex;
+            flex-direction: column;
+            background: black;
+            margin: 1%;
+
+            h2 {
+                color:whitesmoke;
+                padding: 2%;
+            }
+
+            .fun {
+                width: 100%;
+                padding: 2%;
+                text-align: center;
+                color: whitesmoke;
+                .lineHeight();
+            }//closes the skillItem class
+
+    }//closes the hobbies class
+
+}//closes the right section
+
+@media(max-width: 768px){
+    flex-direction: column;
+    justify-content: center;
+}//close the media query
+
+@media(max-width: 500px){
+    flex-direction: column;
+    justify-content: center;
+}//close the media query
+
+
+
+
+}//closes the container

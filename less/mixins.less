@@ -1,0 +1,36 @@
+// mixins
+
+.column(){
+    display:flex;
+    flex-direction:column;
+}
+.allCenter() {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vertCenter(){
+    display:flex;
+    align-items: center;
+}
+
+.horCenter(){
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+
+// Parametric
+
+.spacing (@spacing) {
+    display:flex;
+    justify-content: @spacing;
+}
+
+
+// escaping
+@phone: ~'(max-width:500px)';
+
+@tablet: ~'(max-width:767px)';

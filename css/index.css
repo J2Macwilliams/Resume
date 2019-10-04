@@ -1,0 +1,408 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  border: 1px solid gray;
+}
+html {
+  font-size: 62.5%;
+}
+h1,
+h2,
+h4 {
+  font-family: 'Montserrat', sans-serif;
+}
+h3,
+body {
+  font-family: 'Crimson Pro', serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 2.5rem;
+}
+h4 {
+  font-size: 2.5rem;
+}
+body {
+  font-size: 1.8rem;
+}
+html,
+body {
+  height: 100%;
+}
+.navTop {
+  width: 100%;
+}
+.navTop nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #7a9fe6;
+}
+@media (max-width:500px) {
+  .navTop nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.navTop nav a {
+  font-size: 2rem;
+  width: 20%;
+  padding: 1.8%;
+  text-decoration: none;
+  text-align: center;
+  color: #f33b47;
+}
+@media (max-width:500px) {
+  .navTop nav a {
+    width: 100%;
+    border: 1px solid #f33b47;
+    color: whitesmoke;
+    font-size: 3rem;
+  }
+}
+.navTop nav a:hover {
+  color: whitesmoke;
+}
+@media (max-width:500px) {
+  .navTop nav a:hover {
+    color: #18275d;
+  }
+}
+.bigBox {
+  width: 100%;
+  border: 1px solid #f33b47;
+}
+.bigBox h1 {
+  height: 5vh;
+  margin: 2%;
+  text-align: center;
+}
+.bigBox .topBox {
+  width: 100%;
+  background: #556ca6;
+  color: whitesmoke;
+  padding: 2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.bigBox .topBox .aboutL {
+  width: 30%;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+@media (max-width:767px) {
+  .bigBox .topBox .aboutL {
+    width: 45%;
+  }
+}
+.bigBox .topBox .aboutL img {
+  width: 100%;
+  border-radius: 5%;
+  padding: 2%;
+  border: 1px solid whitesmoke;
+}
+.bigBox .topBox .aboutR {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.bigBox .topBox .aboutR .inside {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+}
+.bigBox .topBox .aboutR .inside .skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #7a9fe6;
+  margin: 1%;
+}
+.bigBox .topBox .aboutR .inside .skills h2 {
+  color: whitesmoke;
+  padding: 2%;
+}
+.bigBox .topBox .aboutR .inside .skills .skillItems {
+  width: 100%;
+  padding: 2%;
+  color: black;
+  line-height: 1.5;
+}
+footer {
+  width: 100%;
+  margin-bottom: 1%;
+}
+footer #contact {
+  width: 100%;
+  margin: 1%;
+  border: 1px solid #18275d;
+}
+footer #contact .links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #9f9fa1;
+}
+@media (max-width: 768px) {
+  footer #contact .links {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  footer #contact .links {
+    flex-direction: column;
+  }
+}
+footer #contact .links h3 {
+  padding: 2%;
+}
+footer #contact .links a {
+  font-size: 2rem;
+  width: 20%;
+  padding: 2%;
+  text-decoration: none;
+  text-align: center;
+  color: whitesmoke;
+}
+@media (max-width: 768px) {
+  footer #contact .links a {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #18275d;
+    color: whitesmoke;
+  }
+}
+@media (max-width: 500px) {
+  footer #contact .links a {
+    width: 100%;
+    text-align: center;
+    border: 1px solid #18275d;
+    color: whitesmoke;
+  }
+}
+.home {
+  width: 100%;
+}
+.home .school {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.home .school .study {
+  padding: 3%;
+  line-height: 1.5;
+}
+@media (max-width: 800px) {
+  .home {
+    height: 35%;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    height: 35%;
+  }
+}
+.home .work {
+  width: 90%;
+  margin: 1%;
+}
+.home .work h2 {
+  padding: 2%;
+}
+.home .work .work {
+  display: flex;
+}
+.home .work .work .job {
+  width: 50%;
+  padding: 2%;
+  line-height: 1.5;
+}
+.home .work .professional {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.home .work .professional .proItem {
+  width: 100%;
+  padding: 2%;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .home .work {
+    width: 100%;
+    padding-top: 2%;
+  }
+}
+@media (max-width: 500px) {
+  .home .work {
+    width: 100%;
+    padding-top: 2%;
+  }
+}
+.home .work .hobbies {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  margin: 1%;
+}
+.home .work .hobbies h2 {
+  color: whitesmoke;
+  padding: 2%;
+}
+.home .work .hobbies .fun {
+  width: 100%;
+  padding: 2%;
+  text-align: center;
+  color: whitesmoke;
+  line-height: 1.5;
+}
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
