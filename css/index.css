@@ -245,6 +245,7 @@ body {
 }
 .bigBox .topBox .aboutR .inside {
   width: 100%;
+  line-height: 1.5;
   display: flex;
   flex-direction: column;
   margin: 3%;
@@ -320,89 +321,44 @@ footer #contact .links a {
 }
 .home {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
 }
-.home .school {
+.home .education {
+  display: flex;
+}
+.home .education .school {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+}
+.home .education .school .study {
+  line-height: 1.5;
+}
+.home .work {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 2% 0;
 }
-.home .school .study {
-  padding: 3%;
-  line-height: 1.5;
-}
-@media (max-width: 800px) {
-  .home {
-    height: 35%;
-  }
-}
-@media (max-width: 500px) {
-  .home {
-    height: 35%;
-  }
-}
-.home .work {
-  width: 90%;
-  margin: 1%;
-}
-.home .work h2 {
-  padding: 2%;
-}
-.home .work .work {
+.home .work .workItem {
   display: flex;
 }
-.home .work .work .job {
-  width: 50%;
-  padding: 2%;
+.home .work .workItem .job {
+  margin-right: 25%;
+}
+.home .professional {
   line-height: 1.5;
+  margin: 3% 0;
 }
-.home .work .professional {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-.home .work .professional .proItem {
-  width: 100%;
-  padding: 2%;
-  line-height: 1.5;
-}
-@media (max-width: 768px) {
-  .home .work {
-    width: 100%;
-    padding-top: 2%;
-  }
-}
-@media (max-width: 500px) {
-  .home .work {
-    width: 100%;
-    padding-top: 2%;
-  }
-}
-.home .work .hobbies {
-  display: flex;
-  flex-direction: column;
+.home .hobbies {
   background: black;
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.home .hobbies .fun {
   margin: 1%;
-}
-.home .work .hobbies h2 {
-  color: whitesmoke;
-  padding: 2%;
-}
-.home .work .hobbies .fun {
-  width: 100%;
-  padding: 2%;
-  text-align: center;
-  color: whitesmoke;
-  line-height: 1.5;
-}
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-@media (max-width: 500px) {
-  .home {
-    flex-direction: column;
-    justify-content: center;
-  }
 }
