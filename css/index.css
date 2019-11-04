@@ -170,7 +170,7 @@ body {
 }
 .navTop nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: #7a9fe6;
 }
@@ -216,11 +216,15 @@ body {
 .bigBox .topBox {
   width: 100%;
   background: #556ca6;
-  color: whitesmoke;
-  padding: 2%;
+  padding: 5%;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+@media (max-width:767px) {
+  .bigBox .topBox {
+    flex-direction: column;
+  }
 }
 .bigBox .topBox .aboutL {
   width: 30%;
@@ -229,7 +233,7 @@ body {
 }
 @media (max-width:767px) {
   .bigBox .topBox .aboutL {
-    width: 45%;
+    width: 100%;
   }
 }
 .bigBox .topBox .aboutL img {
@@ -243,12 +247,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+@media (max-width:767px) {
+  .bigBox .topBox .aboutR {
+    width: 100%;
+  }
+}
 .bigBox .topBox .aboutR .inside {
   width: 100%;
   line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  margin: 3%;
+}
+.bigBox .topBox .aboutR .inside h4 {
+  font-size: 2.3rem;
 }
 .bigBox .topBox .aboutR .inside .skills {
   display: flex;

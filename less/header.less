@@ -6,7 +6,7 @@
     
     nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         background: #7a9fe6;
 
@@ -62,16 +62,17 @@
     .topBox {
         width: 100%;
         background: #556ca6;
-        .color();
-        padding: 2%;
+        padding: 5%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        // text-align: center;
+        
+        // .color();
+        
+        @media @tablet{
+            flex-direction: column;
+        }//close the media query
 
-        // h1 {
-        // // text-align: center;
-        // }
 
         .aboutL {
             width: 30%;
@@ -79,7 +80,8 @@
             .lineHeight();
 
             @media @tablet {
-                  width:45%;  
+                  width:100%;  
+
             }
 
             img {
@@ -97,12 +99,18 @@
             width:60%;
             .column();
 
+            @media @tablet {
+                width:100%;  
+          }
+
             .inside {
                 width:100%;
-                // .spacing(space-evenly);
                 line-height: 1.5;
-                .column();
-                margin:3%;
+                
+
+                h4 {
+                    font-size: 2.3rem;
+                }
 
                 .skills {
                     display:flex;
