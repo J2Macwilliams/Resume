@@ -259,12 +259,21 @@ body {
 .bigBox .topBox .aboutR .inside h4 {
   font-size: 2.3rem;
 }
+.bigBox .topBox .aboutR .inside p {
+  color: white;
+  font-size: 2.2rem;
+}
 .bigBox .topBox .aboutR .inside .skills {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   background: #7a9fe6;
   margin: 1%;
+}
+@media (max-width:767px) {
+  .bigBox .topBox .aboutR .inside .skills {
+    align-items: center;
+  }
 }
 .bigBox .topBox .aboutR .inside .skills h2 {
   color: whitesmoke;
@@ -274,7 +283,11 @@ body {
   width: 100%;
   padding: 2%;
   color: black;
-  line-height: 1.5;
+}
+@media (max-width:767px) {
+  .bigBox .topBox .aboutR .inside .skills .skillItems {
+    text-align: center;
+  }
 }
 footer {
   width: 100%;

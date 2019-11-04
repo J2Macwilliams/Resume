@@ -106,12 +106,15 @@
             .inside {
                 width:100%;
                 line-height: 1.5;
-                
 
                 h4 {
                     font-size: 2.3rem;
                 }
 
+                p {
+                    color: white;
+                    font-size: 2.2rem;
+                }
                 .skills {
                     display:flex;
                     flex-direction: column;
@@ -119,17 +122,23 @@
                     background: #7a9fe6;
                     margin: 1%;
             
+                    @media @tablet{
+                        align-items: center;
+                    }
                     h2 {
                         color:whitesmoke;
                         padding: 2%;
                     }
+                    
             
                     .skillItems {
                         width: 100%;
                         padding: 2%;
-                        // text-align: center;
                         color: black;
-                        .lineHeight();
+                        
+                        @media @tablet{
+                            text-align: center;
+                        }
                     }//closes the skillItem class
                 }//closes the skills class
             }//closes the inside class
