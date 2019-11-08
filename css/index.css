@@ -258,6 +258,7 @@ body {
 }
 .bigBox .topBox .aboutR .inside h4 {
   font-size: 2.3rem;
+  font-weight: bold;
 }
 .bigBox .topBox .aboutR .inside p {
   color: white;
@@ -349,6 +350,7 @@ footer #contact .links a {
 }
 .home .education {
   display: flex;
+  margin: 1.5% 0;
 }
 .home .education .school {
   flex-direction: column;
@@ -358,21 +360,41 @@ footer #contact .links a {
 .home .education .school .study {
   line-height: 1.5;
 }
+.home .education .school .study p {
+  padding-left: 2%;
+}
+.home .education .school .study li {
+  padding-left: 2%;
+}
 .home .work {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  margin: 2% 0;
 }
 .home .work .workItem {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.home .work .workItem .job {
-  margin-right: 25%;
+.home .work .workItem .job p {
+  margin-left: 2% ;
 }
 .home .professional {
   line-height: 1.5;
   margin: 3% 0;
+}
+.home .professional h5 {
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+.home .professional h6 {
+  font-size: 1.8rem;
+}
+.home .professional p {
+  margin-left: 2%;
+}
+.home .college li {
+  margin-left: 2%;
 }
 .home .hobbies {
   background: black;
